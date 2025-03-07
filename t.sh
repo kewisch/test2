@@ -16,3 +16,4 @@ gh api graphql -F repoOwner="${REPO%/*}" -F repoName="${REPO#*/}" -F prNumber="$
     }
   }' --jq '.data.repository.pullRequest.closingIssuesReferences.nodes.[].number'
 
+# hi
