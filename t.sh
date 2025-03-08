@@ -23,7 +23,8 @@ GITHUB_REPOSITORY=kewisch/test2
 gh api repos/$GITHUB_REPOSITORY/milestones --jq '
       map(select(.state == "open" and .due_on != null))
       | sort_by(.due_on) | reverse
-      | "milestone=" + (.[0].number|tostring)'
+      | "number=" + (.[0].number|tostring)
+        + "\ntitle=" + .[0].title'
 #ACTIVE_MILESTONE=$(gh api repos/$GITHUB_REPOSITORY/milestones --jq '
 #      map(select(.state == "open" and .due_on != null))
 #      | sort_by(.due_on) | reverse
