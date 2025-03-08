@@ -32,4 +32,3 @@ gh api repos/$GITHUB_REPOSITORY/milestones --jq '
 #gh api --method PATCH /repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER -f milestone=$ACTIVE_MILESTONE >/dev/null
 # hi
 #hi
-#hi
