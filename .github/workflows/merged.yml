@@ -28,7 +28,7 @@ jobs:
             and effort you put into improving Thunderbird. If you haven’t already, you’re welcome to
             join our Matrix chat for contributors. It’s where we discuss development and help each
             other out. https://matrix.to/#/#tb-android-dev:mozilla.org
-.
+
             Hope to see you there! 🚀📱🐦
         run: |
           gh pr comment $PR_NUMBER --repo $GITHUB_REPOSITORY --body "$MESSAGE"
