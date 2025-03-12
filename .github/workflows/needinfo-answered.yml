@@ -23,6 +23,7 @@ jobs:
       - name: Remove answered label if both exist
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           gh issue edit $ISSUE_NUMBER --remove-label "status: answered"
       
